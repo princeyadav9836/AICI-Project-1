@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a clinic appointment with MediCare.">
+    <title>Book an Appointment | MediCare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="site-header"></div>
+    <main>
+        <section class="page-hero">
+            <div class="container reveal"><span class="eyebrow">BOOK A VISIT</span>
+                <h1>Your health comes first.</h1>
+                <p>Share a few details and request a convenient appointment.</p>
+                <div class="breadcrumbs"><a href="index.html">Home</a><i
+                        class="fa-solid fa-chevron-right"></i><span>Appointment</span></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container booking-layout">
+                <div class="booking-aside reveal"><span class="eyebrow">LET'S GET YOU STARTED</span>
+                    <h2>Make time for your health.</h2>
+                    <p>Complete the form and our clinic team can follow up to confirm your appointment.</p>
+                    <div class="contact-point"><span><i class="fa-solid fa-phone"></i></span>
+                        <div><strong>Call our clinic</strong><small>+91 98754 07092</small></div>
+                    </div>
+                    <div class="contact-point"><span><i class="fa-regular fa-clock"></i></span>
+                        <div><strong>Clinic hours</strong><small>Mon – Sat, 9:00 AM – 7:00 PM</small></div>
+                    </div>
+                    <div class="notice-box"><i class="fa-solid fa-circle-info"></i>
+                        <p>This demo form stores requests in your browser only. It does not send data to a real clinic.
+                        </p>
+                    </div>
+                </div>
+                <form class="appointment-form reveal" id="appointment-form">
+                    <div class="form-heading">
+                        <h2>Appointment request</h2>
+                        <p>Fields marked with * are required.</p>
+                    </div>
+                    <div class="form-grid"><label class="form-field">Patient name *<input name="name" type="text"
+                                placeholder="Enter your full name" required minlength="2"></label><label
+                            class="form-field">Email address *<input name="email" type="email"
+                                placeholder="you@example.com" required></label><label class="form-field">Phone number
+                            *<input name="phone" type="tel" placeholder="10-digit phone number"
+                                pattern="[0-9+() -]{10,16}" required></label><label class="form-field">Choose doctor
+                            *<select name="doctor" id="appointment-doctor" required>
+                                <option value="">Select a doctor</option>
+                            </select></label><label class="form-field">Preferred date *<input name="date"
+                                id="appointment-date" type="date" required></label><label class="form-field">Preferred
+                            time *<select name="time" required>
+                                <option value="">Choose a time</option>
+                                <option>09:00 AM</option>
+                                <option>10:00 AM</option>
+                                <option>11:00 AM</option>
+                                <option>12:00 PM</option>
+                                <option>02:00 PM</option>
+                                <option>03:00 PM</option>
+                                <option>04:00 PM</option>
+                                <option>05:00 PM</option>
+                                <option>06:00 PM</option>
+                            </select></label><label class="form-field full">Message (optional)<textarea name="message"
+                                rows="4" placeholder="Tell us briefly how we can help"></textarea></label></div><button
+                        class="btn btn-primary btn-wide" type="submit">Submit appointment request <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                    <p class="form-footnote"><i class="fa-solid fa-lock"></i> Your information is handled with care in
+                        this demo.</p>
+                    <div class="form-success" id="appointment-success" role="status" hidden></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

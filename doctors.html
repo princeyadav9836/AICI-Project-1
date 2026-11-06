@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse MediCare doctors and find a specialist.">
+    <title>Our Doctors | MediCare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="site-header"></div>
+    <main>
+        <section class="page-hero">
+            <div class="container reveal"><span class="eyebrow">OUR MEDICAL TEAM</span>
+                <h1>Meet our doctors</h1>
+                <p>Experienced specialists, dedicated to helping you feel your best.</p>
+                <div class="breadcrumbs"><a href="index.html">Home</a><i
+                        class="fa-solid fa-chevron-right"></i><span>Doctors</span></div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="directory-tools reveal"><label class="search-field"><i
+                            class="fa-solid fa-magnifying-glass"></i><input id="doctor-search" type="search"
+                            placeholder="Search doctor or specialty"></label><label class="search-field"><i
+                            class="fa-solid fa-filter"></i><select id="doctor-filter">
+                            <option value="">All specializations</option>
+                            <option>Cardiology</option>
+                            <option>Dermatology</option>
+                            <option>Pediatrics</option>
+                            <option>Dental Care</option>
+                            <option>General Medicine</option>
+                            <option>Neurology</option>
+                        </select></label></div>
+                <p class="result-count" id="doctor-count" aria-live="polite"></p>
+                <div class="doctor-grid" id="all-doctors"></div>
+            </div>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

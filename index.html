@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MediCare makes it easy to find trusted doctors and book clinic appointments.">
+  <title>MediCare | Your Health, Our Priority</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><i class="fa-solid fa-heart-pulse"></i> YOUR HEALTH, OUR PRIORITY</span>
+          <h1>Care that puts <span>you first.</span></h1>
+          <p class="hero-lead">Find trusted doctors, explore medical services and book your appointment — all in one
+            place.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="doctors.html">Find a doctor <i
+                class="fa-solid fa-arrow-right"></i></a><a class="btn btn-outline" href="services.html">Explore
+              services</a></div>
+          <div class="trust-row">
+            <div class="avatar-stack"><img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=80&h=80&fit=crop&crop=faces"
+                alt=""><img
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=80&h=80&fit=crop&crop=faces"
+                alt=""><img
+                src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=80&h=80&fit=crop&crop=faces" alt="">
+            </div>
+            <div><strong>Trusted care, every day</strong><small>Compassionate care for every family</small></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-image-wrap"><img
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=900&h=1000&fit=crop&crop=faces"
+              alt="Doctor smiling in a clinic"></div>
+          <div class="floating-card card-top"><span class="float-icon"><i class="fa-solid fa-shield-heart"></i></span>
+            <div><strong>Care you can trust</strong><small>Patient-first approach</small></div>
+          </div>
+          <div class="floating-card card-bottom"><span class="rating-star"><i class="fa-solid fa-star"></i></span>
+            <div><strong>4.9/5 patient rating</strong><small>Quality care, close to you</small></div>
+          </div>
+          <div class="hero-blob"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-band">
+      <div class="container">
+        <div class="search-panel reveal">
+          <div class="search-heading"><span class="eyebrow">GET STARTED</span>
+            <h2>Find the right care</h2>
+            <p>Search by doctor name or specialty.</p>
+          </div>
+          <form class="quick-search" id="home-search"><label class="search-field"><i
+                class="fa-solid fa-magnifying-glass"></i><input id="home-query" type="search"
+                placeholder="Doctor or specialization" aria-label="Search doctors"></label><label
+              class="search-field"><i class="fa-solid fa-stethoscope"></i><select id="home-specialty"
+                aria-label="Choose specialty">
+                <option value="">All specializations</option>
+                <option>Cardiology</option>
+                <option>Dermatology</option>
+                <option>Pediatrics</option>
+                <option>Dental Care</option>
+                <option>General Medicine</option>
+                <option>Neurology</option>
+              </select></label><button class="btn btn-primary" type="submit">Search doctors <i
+                class="fa-solid fa-arrow-right"></i></button></form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="eyebrow">OUR DEPARTMENTS</span>
+            <h2>Healthcare for every need</h2>
+            <p>Expert support across the services that matter most.</p>
+          </div><a class="text-link" href="services.html">View all services <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-grid" id="home-services"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="eyebrow">MEET OUR SPECIALISTS</span>
+            <h2>Doctors who care</h2>
+            <p>Get to know our experienced and compassionate medical team.</p>
+          </div><a class="text-link" href="doctors.html">Meet all doctors <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="doctor-grid" id="featured-doctors"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="eyebrow">SIMPLE & CONVENIENT</span>
+          <h2>Care in three easy steps</h2>
+          <p>Getting the care you need should feel simple.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card reveal"><span class="step-number">01</span>
+            <div class="step-icon"><i class="fa-solid fa-user-doctor"></i></div>
+            <h3>Find your doctor</h3>
+            <p>Browse specialists and choose the right doctor for your needs.</p>
+          </article>
+          <article class="step-card reveal"><span class="step-number">02</span>
+            <div class="step-icon"><i class="fa-regular fa-calendar-check"></i></div>
+            <h3>Choose a time</h3>
+            <p>Select a convenient date and available appointment slot.</p>
+          </article>
+          <article class="step-card reveal"><span class="step-number">03</span>
+            <div class="step-icon"><i class="fa-solid fa-hand-holding-medical"></i></div>
+            <h3>Get the care</h3>
+            <p>Visit the clinic and let our team take care of you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-inner reveal">
+        <div><span class="eyebrow eyebrow-light">YOUR WELLBEING MATTERS</span>
+          <h2>Ready to take the next step?</h2>
+          <p>Book a consultation with a doctor who understands your needs.</p>
+        </div><a class="btn btn-white" href="appointment.html">Book an appointment <i
+            class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
